@@ -1,9 +1,8 @@
 pipeline {
-		
+	agent {
+	}
 stages {
-stage('Initialize') {
 
-}
 stage('Build') {
 	steps{
 		sh 'mvn -B'
