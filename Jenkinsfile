@@ -5,17 +5,10 @@ pipeline {
         jdk 'java'
     }	
     stages {
-      stage('Initialize') {
-            steps
-            {
-              arch
-            }
-        }
-      stage('Build') {
-            echo "build"
-        }
-      stage('Test') {
-            mvn -v
-        }
-     }
+        stage('Initialize') {
+            steps {
+                mvn -v            
+            }        
+        }    
+    }
 }
