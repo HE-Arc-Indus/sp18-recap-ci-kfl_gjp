@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Initialize') {
             steps {
-                mvn -v            
+                sh 'mvn -v'            
             }        
         }    
     }
