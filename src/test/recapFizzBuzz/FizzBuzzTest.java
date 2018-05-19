@@ -15,9 +15,10 @@ public class FizzBuzzTest {
      //Arrange
      FizzBuzz fb = new FizzBuzz();
      List<String> expected = Arrays.asList(null,null,null);
+     int a = expected.size();
      //Act
      List<String> actual = fb.generateList(3);
      //Assert
-     assertThat(actual.size(), is(expected.size()));
+     assertEquals("",actual.size(),expected.size());
    }
 }

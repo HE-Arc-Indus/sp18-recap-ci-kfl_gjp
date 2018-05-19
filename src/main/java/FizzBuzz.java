@@ -7,7 +7,7 @@ public class FizzBuzz {
 
   public List<String> generateList(int length){
     List<String> fbList = new ArrayList<>();
-    for(int i =0;i<length+1; i++){
+    for(int i =0;i<length; i++){
       fbList.add(String.valueOf(i));
     }
     return  fbList;
