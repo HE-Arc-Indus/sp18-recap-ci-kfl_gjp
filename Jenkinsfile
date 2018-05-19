@@ -1,16 +1,14 @@
 pipeline {
-	agent any
-
-	stages {
-stage('Build') {
-	steps{
-		sh 'mvn -B'
-	}
-}
-stage('Test') {
-	steps{
-		sh 'mvn test'
-	}
-}
-}
+    agent any 
+    tools {
+        maven 'maven'
+        jdk 'java'
+    }	
+    stages {
+        stage('Initialize') {
+            steps {
+                sh 'mvn -v'            
+            }        
+        }    
+    }
 }
