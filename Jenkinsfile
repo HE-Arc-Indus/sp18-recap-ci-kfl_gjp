@@ -5,9 +5,14 @@ pipeline {
         jdk 'java'
     }	
     stages {
-        stage('Initialize') {
+        stage('Build') {
             steps {
-                sh 'mvn -v'            
+               sh 'mvn -B -DskipTests clean package'
+            }
+        }
+        stage('Tests') {
+            steps {
+                sh 'mvn test'
             }        
         }    
     }
