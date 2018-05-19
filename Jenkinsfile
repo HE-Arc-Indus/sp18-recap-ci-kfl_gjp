@@ -5,9 +5,9 @@ pipeline {
         jdk 'java'
     }	
     stages {
-        stage('Initialize') {
+        stage('Tests') {
             steps {
-                sh 'mvn -v'            
+                sh 'mvn test'
             }        
         }    
     }
