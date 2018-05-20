@@ -29,7 +29,7 @@ public class FizzBuzzTest {
      //Act
      List<String> actual = fb.generateList(3);
      //Assert
-      assertEquals("",actual,expected);
+      assertEquals("Replace multiple of 3 by Fizz",actual,expected);
    }
 
 }
