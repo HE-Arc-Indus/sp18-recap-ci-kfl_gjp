@@ -15,7 +15,6 @@ public class FizzBuzzTest {
      //Arrange
      FizzBuzz fb = new FizzBuzz();
      List<String> expected = Arrays.asList(null,null,null);
-     int a = expected.size();
      //Act
      List<String> actual = fb.generateList(3);
      //Assert
@@ -23,15 +22,14 @@ public class FizzBuzzTest {
    }
 
    @Test
-  public void testReplace3ByFuzz(){
+  public void testReplace3ByFizz(){
      //Arrange
      FizzBuzz fb = new FizzBuzz();
-     List<String> expected = Arrays.asList("1","2","3");
+     List<String> expected = Arrays.asList("1","2","Fizz");
      //Act
-
-
+     List<String> actual = fb.generateList(3);
      //Assert
-
+      assertEquals("",actual,expected);
    }
 
 }
