@@ -32,4 +32,15 @@ public class FizzBuzzTest {
       assertEquals("Replace multiple of 3 by Fizz",actual,expected);
    }
 
+   @Test
+  public void testReplace5ByBuzz(){
+     //Arrange
+     FizzBuzz fb = new FizzBuzz();
+     List<String>expected =Arrays.asList("1","2","Fizz","4","Buzz");
+     //Act
+     List<String> actual = fb.generateList(5);
+     //Assert
+     assertEquals("Replace multiple of 5 by Buzz",actual,expected);
+   }
+
 }
