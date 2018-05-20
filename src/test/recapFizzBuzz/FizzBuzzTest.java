@@ -21,4 +21,17 @@ public class FizzBuzzTest {
      //Assert
      assertEquals("",actual.size(),expected.size());
    }
+
+   @Test
+  public void testReplace3ByFuzz(){
+     //Arrange
+     FizzBuzz fb = new FizzBuzz();
+     List<String> expected = Arrays.asList("1","2","3");
+     //Act
+
+
+     //Assert
+
+   }
+
 }

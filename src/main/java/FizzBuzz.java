@@ -12,4 +12,12 @@ public class FizzBuzz {
     }
     return  fbList;
   }
+
+  private String transformNumberToString(int n){
+    String s = String.valueOf(n);
+    if(n % 3 == 0){
+      return "Fizz";
+    }
+    return s;
+  }
 }
